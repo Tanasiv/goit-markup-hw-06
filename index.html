@@ -55,12 +55,18 @@
             </li>
           </ul>
         </address>
+
+        <button class="burger-btm" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- #endregion header -->
 
     <!-- #region main -->
-    <main>
+    <main class="hidden">
       <!-- section 1 -->
       <section class="page-section">
         <div class="container section-container hego-container">
@@ -417,7 +423,7 @@
     <!-- #endregion main -->
 
     <!-- #region footer -->
-    <footer class="page-footer">
+    <footer class="hidden page-footer">
       <div class="container section-container container-footer">
         <!-- Лівий блок -->
         <div class="footer">
@@ -492,7 +498,7 @@
     <!-- #endregion footer -->
 
     <!-- #region modal -->
-    <div class="backdrop is-open" data-modal="">
+    <div class="hidden backdrop is-open" data-modal="">
       <div class="modal">
         <button class="close-button" type="button" data-modal-close="">
           <svg class="close-icon" width="8" height="8">
