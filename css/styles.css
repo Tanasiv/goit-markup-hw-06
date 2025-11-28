@@ -262,7 +262,6 @@ button {
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 100%;
 }
 
@@ -300,8 +299,8 @@ button {
 }
 
 .nav-link-mobile {
+  padding: 20px 0;
   display: block;
-  padding: 24px 0;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 36px;
@@ -347,8 +346,10 @@ button {
 
 .contacts-list-mobile {
   display: flex;
+  padding-top: 168px;
+  padding-bottom: 48px;
   flex-direction: column;
-  gap: 12px;
+  gap: 24px;
 }
 
 .contacts-link-mobile {
@@ -373,15 +374,17 @@ button {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  gap: 40px;
   list-style: none;
-  margin-bottom: 32px;
 }
 
 .icon-link-mobile {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
   width: 40px;
   height: 40px;
   background-color: #4d5ae5;
@@ -403,19 +406,6 @@ button {
   height: 24px;
 }
 
-.ul-mobile {
-  display: flex;
-  gap: 40px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.icon-mobile svg {
-  width: 24px;
-  height: 24px;
-}
-
 /* tablet/desktop */
 @media screen and (min-width: 768px) {
   .mobile-menu {
@@ -426,7 +416,7 @@ button {
 /* main */
 /* section 1 */
 .page-section {
-  padding: 120px 16px;
+  padding: 96px 0;
   background-color: #2e2f42;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -490,10 +480,6 @@ button {
 
 /* tablet */
 @media (min-width: 768px) {
-  .page-section {
-    padding: 160px 32px;
-  }
-
   .one-name {
     max-width: 496px;
     font-size: 56px;
@@ -505,7 +491,7 @@ button {
 /* desktop */
 @media (min-width: 1200px) {
   .page-section {
-    padding: 188px 80px;
+    padding: 120px 0;
   }
 
   .one-name {
@@ -520,8 +506,7 @@ button {
 
 /* section 2 */
 .section-list {
-  padding: 60px 16px;
-  margin-bottom: 100px;
+  padding: 96px 0;
   font-weight: 500;
   font-size: 18px;
   letter-spacing: 0.02em;
@@ -546,7 +531,7 @@ button {
 .one-list {
   display: flex;
   flex-direction: column;
-  gap: 72px;
+  gap: 72px 24px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -555,8 +540,6 @@ button {
 .one-list li {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
 }
 
 .icon-img {
@@ -564,6 +547,8 @@ button {
 }
 
 .name-list {
+  align-items: center;
+  text-align: center;
   margin-bottom: 8px;
   font-weight: 700;
   font-size: 36px;
@@ -582,16 +567,11 @@ button {
 
 /* tablet */
 @media (min-width: 768px) {
-  .section-list {
-    margin-left: 16px;
-    margin-top: 92px;
-  }
-
   .one-list {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 24px;
+    gap: 72px 24px;
   }
 
   .one-list li {
@@ -599,15 +579,15 @@ button {
     text-align: left;
   }
 
-  .text-list {
-    margin-bottom: 72px;
+  .name-list {
+    text-align: left;
   }
 }
 
 /*  desktop  */
 @media (min-width: 1200px) {
   .section-list {
-    padding: 120px 80px;
+    padding: 120px 0;
     font-size: 20px;
   }
 
@@ -641,8 +621,8 @@ button {
 
 /* section 3*/
 .section-team {
-  padding: 60px 16px;
-  margin-bottom: 96px;
+  margin: 0;
+  padding: 96px 0;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -652,8 +632,6 @@ button {
 }
 
 .two-name {
-  margin-top: 96px;
-  margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -665,8 +643,8 @@ button {
 
 .team-list {
   display: flex;
-  flex-direction: column;
-  gap: 72px;
+  flex-wrap: wrap;
+  gap: 64px 24px;
   padding: 0;
   margin: 0;
   justify-content: center;
@@ -674,7 +652,7 @@ button {
 }
 
 .team-item {
-  flex: 0 0 calc((100% - 3 * 24px) / 4);
+  width: 264px;
   height: 100%;
   background-color: #fff;
   border-radius: 0 0 4px 4px;
@@ -694,12 +672,10 @@ button {
 }
 
 .div-name {
-  padding: 16px 8px 32px 8px;
+  padding: 32px 0;
 }
 
 .name-people {
-  margin-top: 32px;
-  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -725,7 +701,6 @@ button {
   justify-content: center;
   gap: 24px;
   list-style: none;
-  margin-bottom: 32px;
 }
 
 .icon-link {
@@ -746,10 +721,6 @@ button {
 
 /* tablet */
 @media (min-width: 768px) {
-  .section-team {
-    padding: 80px 32px;
-  }
-
   .team-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -766,7 +737,7 @@ button {
 /* desktop */
 @media (min-width: 1200px) {
   .section-team {
-    padding: 120px 80px;
+    padding: 120px 0;
     font-size: 20px;
   }
 
@@ -796,28 +767,22 @@ button {
 
 /* section 4 */
 .portfolio {
+  padding: 96px 0;
   background-color: #fff;
-  padding: 160px 16px;
   text-align: left;
   letter-spacing: 0.02em;
 }
 
 .our-portfolio {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 48px;
-  margin: 0;
   padding: 0;
   list-style: none;
+  justify-content: center;
 }
 
 .our-portfolio li {
-  flex: 1 1 calc((100% - 48px) / 3);
-  box-sizing: border-box;
-  min-width: 280px;
-}
-
-.our-portfolio li div {
   box-sizing: border-box;
 }
 
@@ -843,14 +808,13 @@ button {
 }
 
 .container-name {
-  padding: 16px;
+  padding: 32px 0;
   border: 1px solid #e7e9fc;
   border-top: none;
   box-sizing: border-box;
 }
 
 .portfolio-name {
-  margin-top: 32px;
   margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
@@ -861,7 +825,6 @@ button {
 }
 
 .portfolio-text {
-  margin-bottom: 32px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -873,20 +836,15 @@ button {
 
 /* tablet */
 @media (min-width: 768px) {
-  .portfolio {
-    padding: 80px 32px;
-  }
-
   .our-portfolio {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 24px;
+    gap: 72px 24px;
+    padding: 0;
+    margin: 0;
   }
 
   .our-portfolio li {
-    flex: 0 0 calc(50% - 12px);
-    min-width: 280px;
+    flex: 0 0 calc((100% - 24px) / 2);
+    box-sizing: border-box;
   }
 
   .list-portfolio {
@@ -897,7 +855,7 @@ button {
 /* desktop */
 @media (min-width: 1200px) {
   .portfolio {
-    padding: 120px 80px;
+    padding: 120px 0;
   }
 
   .two-name {
@@ -941,7 +899,7 @@ button {
 
 /* footer */
 .page-footer {
-  padding: 100px 0;
+  padding: 96px 16px;
   background-color: #2e2f42;
 }
 
@@ -954,7 +912,7 @@ button {
 
 .div-footer {
   width: 50%;
-  margin-bottom: 0;
+  margin-bottom: 72px;
 }
 
 .footer-logo {
@@ -971,7 +929,6 @@ button {
 }
 
 .footer-text {
-  margin-bottom: 72px;
   max-width: 288px;
   line-height: 1.5;
   font-size: 16px;
