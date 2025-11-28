@@ -56,11 +56,84 @@
           </ul>
         </address>
 
-        <button class="burger-btm" type="button">
+        <button class="burger-btm" type="button" data-menu-open>
           <svg class="burger-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
           </svg>
         </button>
+      </div>
+
+      <!-- mobile menu-->
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="close-button-mobile" type="button" data-menu-close="">
+            <svg class="close-icon-mobile" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="nav-list-mobile">
+            <li class="nav-item-mobile">
+              <a class="nav-link-mobile current-mobile" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="nav-item-mobile">
+              <a class="nav-link-mobile" href="">Portfolio</a>
+            </li>
+            <li class="nav-item-mobile">
+              <a class="nav-link-mobile" href="">Contacts</a>
+            </li>
+          </ul>
+
+          <address class="contacts-mobile">
+            <ul class="contacts-list contacts-list-mobile">
+              <li class="contacts-item-mobile">
+                <a class="contacts-link-mobile" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="contacts-item-mobile">
+                <a class="contacts-link-mobile" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <!-- icons -->
+          <div class="text-media-mobile">
+            <ul class="icon-social-mobile ul-mobile">
+              <li class="list-mobile">
+                <a class="icon-link-mobile icon-mobile" href="">
+                  <svg class="icon-three-mobile" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="list-mobile">
+                <a class="icon-link-mobile icon-mobile" href="">
+                  <svg class="icon-three-mobile" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="list-mobile">
+                <a class="icon-link-mobile icon-mobile" href="">
+                  <svg class="icon-three-mobile" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="list-mobile">
+                <a class="icon-link-mobile icon-mobile" href="">
+                  <svg class="icon-three-mobile" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <!-- #endregion header -->
@@ -423,10 +496,10 @@
     <!-- #endregion main -->
 
     <!-- #region footer -->
-    <footer class="hidden page-footer">
+    <footer class="page-footer">
       <div class="container section-container container-footer">
-        <!-- Лівий блок -->
-        <div class="footer">
+        <!-- left block -->
+        <div class="div-footer">
           <a class="logo footer-logo" href="./index.html">
             Web<span class="logo-part">Studio</span>
           </a>
@@ -438,7 +511,7 @@
           </p>
         </div>
 
-        <!-- Середній блок -->
+        <!-- middle block -->
         <div class="text-media">
           <p class="social-media">Social media</p>
           <ul class="icon-social ul-footer">
@@ -473,7 +546,7 @@
           </ul>
         </div>
 
-        <!-- Правий блок -->
+        <!-- right block -->
         <div class="subscribe">
           <p class="text-subscribe">Subscribe</p>
           <form class="form-footer">
@@ -593,5 +666,6 @@
     <!-- #endregion modal -->
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
