@@ -419,11 +419,8 @@ button {
 .page-section {
   padding: 96px 0;
   background-color: #2e2f42;
-
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.25);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     image-set(
       url("../images/people-office-mobile.jpg") 1x,
       url("../images/people-office-mobile@2x.jpg") 2x
@@ -482,10 +479,7 @@ button {
     height: 436px;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.25);
 
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       image-set(
         url("../images/people-office-tablet.jpg") 1x,
         url("../images/people-office-tablet@2x.jpg") 2x
@@ -506,10 +500,7 @@ button {
     padding: 120px 0;
     height: 600px;
 
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       image-set(
         url("../images/people-office-desktop.jpg") 1x,
         url("../images/people-office-desktop@2x.jpg") 2x
@@ -860,6 +851,11 @@ button {
 
 /* tablet */
 @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
+    .container-fourth {
+      width: 768px;
+    }
+  }
   .our-portfolio {
     justify-content: center;
     gap: 72px 24px;
@@ -1083,9 +1079,8 @@ button {
     justify-content: flex-start;
     gap: 24px;
   }
-
-  .input-footer {
-    width: 264px;
+  .div-footer {
+    width: auto;
     margin-bottom: 0;
   }
 }
