@@ -256,17 +256,16 @@ button {
 }
 
 .mobile-menu-container {
-  position: relative;
-  padding-top: 72px;
-  padding-bottom: 40px;
-
+ justify-content: space-between;
+ position: relative; 
+  height: 100%;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  padding: 16px 0px;
 }
 
 .mobile-menu .contacts {
-  display: block;
+  display: flex;
 }
 
 .close-button-mobile {
@@ -298,8 +297,9 @@ button {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
+
 .nav-link-mobile {
-  padding: 20px 0;
   display: block;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -341,15 +341,14 @@ button {
 
 .contacts-mobile {
   font-style: normal;
-  display: block;
+  display: auto;
 }
 
 .contacts-list-mobile {
   display: flex;
-  padding-top: 168px;
-  padding-bottom: 48px;
   flex-direction: column;
   gap: 24px;
+  margin-bottom: auto;
 }
 
 .contacts-link-mobile {
@@ -367,15 +366,17 @@ button {
   color: #404bbf;
 }
 
-/* icons-mobile */
+.nav-list-mobile {
+  margin-top: 72px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
 
+/* icons-mobile */
 .icon-social-mobile {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
   gap: 40px;
-  list-style: none;
 }
 
 .icon-link-mobile {
@@ -420,7 +421,7 @@ button {
   padding: 96px 0;
   background-color: #2e2f42;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.25);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     image-set(
       url("../images/people-office-mobile.jpg") 1x,
       url("../images/people-office-mobile@2x.jpg") 2x
@@ -430,7 +431,6 @@ button {
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 432px;
 }
 
 .one-name {
@@ -476,11 +476,10 @@ button {
 /* tablet */
 @media (min-width: 768px) {
   .page-section {
-    height: 436px;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.25);
-
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      image-set(
+  background-color: #2e2f42;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.25);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    image-set(
         url("../images/people-office-tablet.jpg") 1x,
         url("../images/people-office-tablet@2x.jpg") 2x
       );
@@ -497,16 +496,14 @@ button {
 /* desktop */
 @media (min-width: 1158px) {
   .page-section {
-    padding: 120px 0;
-    height: 600px;
-
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      image-set(
+    padding: 188px 0;
+  background-color: #2e2f42;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.25);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    image-set(
         url("../images/people-office-desktop.jpg") 1x,
         url("../images/people-office-desktop@2x.jpg") 2x
       );
-
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.25);
   }
 
   .one-name {
@@ -608,6 +605,10 @@ button {
 
 /*  desktop  */
 @media (min-width: 1158px) {
+.two-name{
+  margin-top: 0;
+}
+
   .page-section {
     background-image: image-set(
       url("../images/people-office-desktop.jpg") 1x,
@@ -926,7 +927,7 @@ button {
 
 /* footer */
 .page-footer {
-  padding: 96px 16px;
+  padding: 96px 0px;
   background-color: #2e2f42;
 }
 
@@ -938,7 +939,6 @@ button {
 }
 
 .div-footer {
-  width: 50%;
   margin-bottom: 72px;
 }
 
@@ -951,7 +951,6 @@ button {
 
 .footer-logo .logo-part {
   display: inline-block;
-  margin-bottom: 16px;
   color: #f4f4fd;
 }
 
@@ -1008,7 +1007,6 @@ button {
 }
 
 .input-footer {
-  margin-bottom: 16px;
   border-radius: 4px;
   width: 288px;
   height: 40px;
@@ -1055,7 +1053,7 @@ button {
 }
 
 /* tablet */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 584px) {
   .container-footer {
     display: flex;
     flex-direction: row;
@@ -1072,6 +1070,10 @@ button {
 
   .ul-footer {
     justify-content: flex-start;
+  }
+
+  .input-footer{
+    width: 264px;
   }
 
   .form-footer {
@@ -1091,15 +1093,16 @@ button {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 120px;
   }
 
   .div-footer {
+    margin-right: 120px;
     width: 264px;
     margin-right: 0;
   }
 
   .text-media {
+    margin-right: 80px;
     width: 208px;
     display: flex;
     flex-direction: column;
